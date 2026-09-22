@@ -1,0 +1,44 @@
+name: ytmusic_flutter
+description: An open-source YouTube Music client built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Networking / YT Music internal API
+  http: ^1.2.1
+  crypto: ^3.0.3
+
+  # YouTube audio stream extraction
+  youtube_explode_dart: ^2.2.2
+
+  # Audio playback + background/lock-screen controls
+  just_audio: ^0.9.40
+  audio_service: ^0.18.15
+
+  # Secure cookie storage
+  flutter_secure_storage: ^9.2.2
+
+  # State management
+  provider: ^6.1.2
+
+  # Cached network images for thumbnails
+  cached_network_image: ^3.3.1
+
+  # Local persistence for lightweight settings
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
